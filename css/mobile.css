@@ -1,0 +1,38 @@
+/*so in this file we'll make changes o our hotel website so it's mobile responsive*/
+/*so for e.g. on our mobile version, we want to get rid of some floats we established for our desktp page*/
+
+#navbar .logo {float:none;
+text-align: center;}
+
+#navbar ul, #navbar ul li {float:none;}
+
+/*se how our page structure changes when you squeze the page, navbar items are no onger in a row, but on another*/
+
+/*we'll remove too much space between the navbar items*/
+
+#navbar ul li a{padding: 5px;
+border-bottom: lightblue dotted 1px;}
+
+
+/*now we'll style our home info section - the one under main section with the picture on left and some text on right*/
+#home-info .info-img{display:none;} /*by doing this on mobile sites the picture on the left will not display at all*/
+
+/*but now our text is not centered - we need to get rid of the float and change the page width to 100%*/
+#home-info .info-content{float:none;
+width: 100%;}
+
+/*now we want our last home page part - the 3 boxes not to be next to each other but on each other*/
+.box{float:none;
+width:100%;}
+
+/*here we'll make changes to our about page, but first we need to put link to our css file in our about page*/
+/*first we'll get rid of floats so that both parts of info section are not next but on anouther*/
+#about-info .info-right, #about-info .info-left {float:none;
+width:100%;}
+
+#about-info .info-right{margin-top:30 px;} /*this is to add some space between text and picture*/
+
+.container h1 {text-align: center;} /*to center our heading*/
+
+/*contact page - first add the link to css stylesheet on contact page */
+#contact-info .box {border-bottom: lightgreen dotted 1px;} /*this is just to separate them a bit*/

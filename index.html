@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to the best hotel">
+    <meta name="keywords" content="hotel, boston, accomodation"> 
+    <script src="https://kit.fontawesome.com/e21df9c150.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"> <!--this is to link to our css stylesheet-->
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css"> <!--this is to link to our css monile stylesheet-->
+    <title>Hotel DP | Welcome  </title>
+</head>
+<body> 
+  <header>
+      <nav id="navbar">
+          <h1 class="logo"><a href="index.html"></a>HBT</h1> <!--this is to create the logo of our bebsite that if we click on it will take us to home page-->
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="contact.html">Conact</a></li>
+            
+        </ul>
+        </nav>
+
+        <div id="showcase"> <!--So this is the whole main area-->
+
+        <div class="container"> <!--Within the showcase we want to put container. THis is to prevent our text in the showcase to strech for the whole page. We want it to stretch only within the container. However, background img should not be restricted by container and should go across the whole page. That's why container is under the whole showcase class-->
+
+            <div class="showcase-content"> <!--this is the text aree in the showcase-->
+                <h1> <span class="text-primary">Enjoy</span> your stay! </h1> <!--we wrapped enjoy within a span because this word should have a different colors than the rest ot the sentence-->
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure, dignissimos reiciendis officiis porro eligendi?</p> <!--we added class of lead to paragraph because paragraph font size is a bit bigger-->
+                <a class="btn" href="about.html">About our Hotel</a> <!--we added here a class because we want to style the link as a button-->
+            </div>
+
+        </div>
+        </div>
+  </header> 
+
+  <!--now we are adding the home info section which is below the showcase-->
+  <section id="home-info" class="bg-dark"> <!--we added a class here because we will use dark background color for this section but also for the footer. If we put both under one class we can chabge the background for both at once-->
+    <div class="info-img"></div>
+    <div class="info-content">
+        <h2><span class="text-primary">The history></span>of our hotel</h2> <!--we added here a span again since the history should be displayed different thant the rest of the heading text-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis voluptate rem possimus? Deserunt at, possimus ad, dolores ex eos adipisci quis, itaque quod blanditiis libero vel quam placeat nobis quia aliquid! Debitis et, veritatis accusantium animi minima velit veniam.</p>
+    <a href="about.html" class="btn btn-light">Read more</a> <!--so under our text we want to add a button- read more. We put a class of btn (button) because we want for it the same setting as for our above placedbutton - about our hotel. However, in this case we added a second class as well - btn-light because we want also to add some specific only for this button features, we want it to be lighter-->
+    </div>
+  </section>
+
+  <!--now we add the 3 icons with descriptions that come at the page bottom. We take the icons from the website fontawesome.com-->
+  <section id="features">
+      <div class="box">
+            <i class="fas fa-hotel  fa-3x"></i>
+          <h3>Great location</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet adipisci impedit excepturi alias eligendi.</p>
+      </div>
+      <div class="box"> 
+          <h3>Free Meals</h3>
+          <i class="fas fa-utensils  fa-3x"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet adipisci impedit excepturi alias eligendi.</p>
+    </div>
+      <div class="box"> 
+          <h3>Fitness room</h3>
+          <i class="fas fa-dumbbell  fa-3x"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet adipisci impedit excepturi alias eligendi.</p>
+    </div>
+  </section>
+  
+  <footer id="main-footer">
+      <p> Hotel BT &copy; 2019, All rights reserved </p>
+  </footer>
+
+</body>
+</html>

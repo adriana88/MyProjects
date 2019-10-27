@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to the best hotel">
+    <meta name="keywords" content="hotel, boston, accomodation"> 
+    <link rel="stylesheet" href="css/style.css"> <!--this is to link to our css stylesheet-->
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css"> <!--this is to link to our css monile stylesheet-->
+    <script src="https://kit.fontawesome.com/e21df9c150.js" crossorigin="anonymous"></script> <!--since we are using icons on our contact page as well, we copied the link to the fontawesome.com from our home page-->
+
+    <title>Hotel DP | Contact  </title>
+</head>
+<body> 
+  <header>
+      <nav id="navbar">
+          <h1 class="logo"><a href="index.html"></a>HBT</h1> <!--this is to create the logo of our bebsite that if we click on it will take us to home page-->
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="contact.html">Conact</a></li>
+        </ul>
+        </nav>
+       </header> 
+<section id="contact-form" class="py-1">
+    <div class="container">
+        <h1 class="text-primary"> Contact us</h1>
+        <p>please fill out the form</p>
+        <form action="process.php"> <!--php deals with sending out the form that's why we put it like this-->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"> </textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</section>
+
+<section id="contact-info">
+    <div class="container">
+            <div class="box">
+                    <i class="fas fa-hotel  fa-3x"></i>
+                  <h3> location</h3>
+                  <p> 50 Main street, Boston USA</p>
+              </div>
+              <div class="box"> 
+                  <h3>Phone number</h3>
+                  <i class="fas fa-phone  fa-3x"></i>
+                <p>989839843432</p>
+            </div>
+              <div class="box"> 
+                  <h3>Email address</h3>
+                  <i class="fas fa-envelope  fa-3x"></i>
+                <p>Leligendi@.com</p>
+            </div>
+    </div>
+
+</section>
+       <footer id="main-footer">
+      <p> Hotel BT &copy; 2019, All rights reserved </p>
+  </footer>
+
+</body>
+</html>

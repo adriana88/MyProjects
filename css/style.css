@@ -1,0 +1,175 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;}/*this is to reset default margin and padding from our website*/
+
+/*main styling - for the page as a whole*/
+html, body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.7em;}
+
+a{color: lightgrey;
+text-decoration: none;
+}
+
+h1,h2,h3 {padding-bottom: 20 px;} /*since we removed margins and padding for the whole page above, we need to now add some spacing so that the nav items are not so squized.*/
+
+p{margin:10px 0;}
+
+/*navbar styling*/
+#navbar{background:#333;
+color:white;
+overflow:auto;}
+ /*this makes the background show no matter what*/
+
+ .clr{clear: both;}
+
+
+/*group padding - for multiple elements*/
+.py-1 {padding:60px 0;}
+
+ #navbar .logo {float:left;
+padding-top:20px;} /*this is to make the logo stay on the left side*/
+
+#navbar ul{list-style: none;
+    float:right;
+} /*this is to locate navbar items on the right side*/
+
+#navbar ul li {float:left;} /*this is to locate nav items next to each other and not under another*/
+
+#navbar ul li a{display:block;
+padding:20px;
+text-align: center;}
+ /*next nav item should push the next one to the new line, and we want them to be a fir further from one another*/
+
+ #navbar ul li a:hover{background: #444;
+color:lightblue;}
+
+/*showcase styling*/
+#showcase {background: url(../showcase.jpg) no-repeat
+center center/cover; 
+height:600px;} /* we put 2 dots because our img is outside of the folder we are currently in*/
+
+/*showcase content styling*/
+
+#showcase .showcase-content{
+    color:white; /*font color white*/
+    text-align: center; /*text in the page center*/
+    padding-top: 170px; /*text moved down a bit from the top of the page*/
+}
+
+#showcase .showcase-content h1 {font-size:16px;
+    line-height:1.2em;}
+
+.text-primary{color:#f7c08a;} /*so that enjoy word has a different color*/
+
+.lead{font-size:20px;}
+
+#showcase .showcase-content p{padding-bottom: 20px;
+line-height:1.7em;} /*this is to move about us a bit lower*/
+
+.btn {display:inline-block; /*we want all 3 words about our hotel to be in one line, but we don't want anything else in this line except for the button "about our hotel" that's why inline block*/
+font:size:18px;
+color:white;
+background:#333;
+padding:13px 20px; /*to make the button a bit wider and bigger*/
+border:none;
+cursor:pointer;}
+
+.btn-light{background:#f4f4f4;
+    color:black;
+}
+
+.btn:hover {background:#f7c08a;
+color:#333;}
+
+/*home info styling*/
+#home-info{height:400px;}
+
+#home-info .info-img {float:left;
+width:50%; /*50% because we split this section between the img and the content which takes the second half of the width.*/
+background: url('../photo-1.jpg') no-repeat;
+min-height:100%;}
+
+#home-info .info-content {float:rigt;
+width: 50%;
+height:100%;
+text-align: center;
+padding:50px 30px;
+overflow:hidden;}
+
+.bg-dark{background: #333;
+color:white;}
+
+#home-info .info-content p{padding-bottom: 30px;} /*this is to move the read more a bit apart from the paragraph text*/
+
+/*now we want to style our icons and descriptions*/
+.box{float:left;
+    background:white;
+width:33.3%; /*we want them all in one line, but we still should add the left float*/
+padding:15px; /*padding will not be added to width as we established at the very top that box sizing is box border*/
+text-align: center;
+}
+
+.box i {margin-bottom:10px;} /*this is to add some sace between the icon and the description*/
+
+/*footer styling*/
+#main-footer {text-align: center;
+background: #444444;
+color:white;
+padding:20px;}
+
+/*styling of our about page*/
+#about-info .info-right {float: right;
+width:50%;
+height:100%;}
+
+#about-info .info-right img{display:block;
+margin:auto;
+width:70%;
+border-radius: 100%;} /*we want the picture to be round*/
+
+#about-info .info-left {float:left;
+width: 50%;
+min-height:100%;}
+
+/*Everything is squized a bit now. So, we want to add some padding. We don't want to add padding to each element separately. That's why above we'll create a group padding for a class let's say py-1. we just need to add this class to every element we want to add this particular padding to in our html file*/
+
+.container h1 {font-size:40px;}
+
+
+/*styling of our reviews- testimonials*/
+#testimonials {height:600px;
+background: url('../test-bg.jpg') no-repeat center center/cover;
+padding-top:40px;}
+
+#testimonials .testimonials img {width:100px;
+float: left;
+margin-right: 20 px;
+border-radius: 50%;} /*we needed to make the images smaller cause they were exceeding the container*/
+
+/*now we are styling the header - what guests say about us*/
+.container h2{color:white;
+text-align: center;
+padding-bottom: 40px;}
+
+
+.testimonials {padding:20px;
+margin-bottom: 40px;
+background:salmon;
+border-radius: 5px;
+opacity:0.7;}
+
+/*now we are styling our contact page*/
+#contact-form .form-group{margin-bottom:20px;
+margin-left:30px;} /*so items are not so squized*/
+
+#contact-form label {display:block;
+margin-bottom: 5px;}
+
+#contact-form input,
+#contact-form textarea {widows: 100%;
+padding:10px;
+border:1px grey solid;}
+
+#contact-form textarea {height:200px;} /*we want this last field - message to be bigger than the other so that more text can be filled in*/
+
+
